@@ -27,3 +27,5 @@ sudo pip install --upgrade virtualenv
 virtualenv -p /usr/bin/python venv
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 chsh -s `which zsh`
+
+sudo sh ./ssl.sh
