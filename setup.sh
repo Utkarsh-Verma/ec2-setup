@@ -17,7 +17,7 @@ do
 	sudo apt-get install -y $app
 done
 
-sudo npm install pm2 -g
+npm install pm2 -g
 pip install --upgrade pip
 pip install --upgrade virtualenv
 virtualenv -p /usr/bin/python27 venv
