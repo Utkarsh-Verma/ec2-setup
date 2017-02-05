@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo apt-get update && sudo apt-get upgrade -y
+export LC_ALL=C
 apps=(
 
 git
@@ -23,6 +24,6 @@ nvm install 6.9.5
 npm install pm2 -g
 pip install --upgrade pip
 pip install --upgrade virtualenv
-virtualenv -p /usr/bin/python27 venv
+virtualenv -p /usr/bin/python venv
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 chsh -s `which zsh`
