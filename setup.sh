@@ -4,8 +4,6 @@ apps=(
 
 git
 nginx
-nodejs
-npm
 zsh
 mysql-server
 python-pip
@@ -17,6 +15,11 @@ do
 	sudo apt-get install -y $app
 done
 
+sudo apt-get install build-essential libssl-dev
+curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh -o install_nvm.sh
+bash install_nvm.sh
+source ~/.nvm/nvm.sh
+nvm install 6.9.5
 npm install pm2 -g
 pip install --upgrade pip
 pip install --upgrade virtualenv
