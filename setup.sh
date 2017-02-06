@@ -1,6 +1,8 @@
 #!/bin/bash
 sudo apt-get update && sudo apt-get upgrade -y
-export LC_ALL=C
+sudo cat <<EOT >> /etc/environment
+LC_ALL="en_US.UTF-8"
+EOT
 apps=(
 
 git
